@@ -27,6 +27,10 @@ const CardContainer = styled.div`
   border-top: 5px solid #a77ca0;
 `;
 
+const Legend = styled.div`
+  font-style: italic;
+`;
+
 export default function ({
   title,
   image,
@@ -48,8 +52,13 @@ export default function ({
         <a href={link} target="_blank">
           <Title>{title}</Title>
         </a>
-        By <a href={authorLink} target="_blank">{author}</a> on{" "}
-        {format(new Date(date), "dd MMM yyyy")}
+        <Legend>
+          By{" "}
+          <a href={authorLink} target="_blank">
+            {author}
+          </a>{" "}
+          on {format(new Date(date), "dd MMM yyyy")}
+        </Legend>
       </div>
       <DottedLine />
       <div className="p-card__inner u-no-padding--top u-no-padding--bottom">
