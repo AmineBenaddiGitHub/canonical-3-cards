@@ -45,10 +45,10 @@ export default function ({
       <DottedLine />
       <div className="p-card__inner u-no-padding--top u-no-padding--bottom">
         <img className="p-card__image" src={image} height="160" />
-        <a href={link}>
+        <a href={link} target="_blank">
           <Title>{title}</Title>
         </a>
-        By <a href={authorLink}>{author}</a> on{" "}
+        By <a href={authorLink} target="_blank">{author}</a> on{" "}
         {format(new Date(date), "dd MMM yyyy")}
       </div>
       <DottedLine />
