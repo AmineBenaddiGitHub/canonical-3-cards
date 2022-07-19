@@ -18,7 +18,7 @@ const Title = styled.h3`
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  height: 5rem;
+  height: 4.5rem;
 `;
 
 const CardContainer = styled.div`
